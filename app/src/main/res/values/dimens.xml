@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_marginLeft">40dp</dimen>
+    <dimen name="button_marginRight">40dp</dimen>
+    <dimen name="button_marginBottom">8dp</dimen>
+    <dimen name="reset_marginLeft">22dp</dimen>
+    <dimen name="reset_marginRight">22dp</dimen>
+    <dimen name="reset_marginBottom">8dp</dimen>
+</resources>
