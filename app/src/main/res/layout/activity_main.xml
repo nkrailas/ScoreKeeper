@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#1DE9B6"
+                android:background="@color/team_background"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
@@ -37,10 +37,10 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="16dp"
                 android:layout_marginTop="16dp"
-                android:background="#F4511E"
+                android:background="@color/score_background"
                 android:fontFamily="sans-serif-light"
                 android:padding="20dp"
-                android:text="0"
+                android:text="@string/_0"
                 android:textColor="#000000"
                 android:textSize="56sp" />
 
@@ -81,7 +81,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#1DE9B6"
+                android:background="@color/team_background"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
@@ -96,10 +96,10 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="16dp"
                 android:layout_marginTop="16dp"
-                android:background="#F4511E"
+                android:background="@color/score_background"
                 android:fontFamily="sans-serif-light"
                 android:padding="20dp"
-                android:text="0"
+                android:text="@string/_0"
                 android:textColor="#000000"
                 android:textSize="56sp" />
 

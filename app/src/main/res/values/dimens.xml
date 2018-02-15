@@ -6,4 +6,7 @@
     <dimen name="reset_marginLeft">22dp</dimen>
     <dimen name="reset_marginRight">22dp</dimen>
     <dimen name="reset_marginBottom">8dp</dimen>
+    <dimen name="button_marginLeft_land">40dp</dimen>
+    <dimen name="button_marginRight_land">40dp</dimen>
+    <dimen name="button_marginBottom_land">4dp</dimen>
 </resources>
