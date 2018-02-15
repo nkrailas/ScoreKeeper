@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="team_background">#1DE9B6</color>
     <color name="score_background">#F4511E</color>
+    <color name="text">#000000</color>
 </resources>
