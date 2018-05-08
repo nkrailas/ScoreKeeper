@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="score_marginTop">24dp</dimen>
     <dimen name="button_marginLeft">40dp</dimen>
     <dimen name="button_marginRight">40dp</dimen>
-    <dimen name="button_marginBottom">8dp</dimen>
+    <dimen name="button_marginTop">16dp</dimen>
+    <dimen name="button_marginBottom">24dp</dimen>
+    <dimen name="button_padding">2dp</dimen>
     <dimen name="reset_marginLeft">22dp</dimen>
     <dimen name="reset_marginRight">22dp</dimen>
-    <dimen name="reset_marginBottom">8dp</dimen>
+    <dimen name="reset_marginBottom">36dp</dimen>
+    <dimen name="score_marginTop_land">8dp</dimen>
     <dimen name="button_marginLeft_land">40dp</dimen>
     <dimen name="button_marginRight_land">40dp</dimen>
+    <dimen name="button_marginTop_land">4dp</dimen>
     <dimen name="button_marginBottom_land">4dp</dimen>
+    <dimen name="button_padding_land">2dp</dimen>
+    <dimen name="reset_marginLeft_land">16dp</dimen>
+    <dimen name="reset_marginRight_land">16dp</dimen>
+    <dimen name="reset_marginBottom_land">36dp</dimen>
 </resources>

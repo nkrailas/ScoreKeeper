@@ -1,148 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/citruscourt">
+    android:background="@drawable/layout_court"
+    tools:context="com.example.android.scorekeeper.MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:context="com.example.android.scorekeeper.MainActivity">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/team_background"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:padding="16dp"
-                android:text="@string/home"
-                android:textColor="@color/text"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/home_score"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@color/score_background"
-                android:fontFamily="sans-serif-light"
-                android:padding="20dp"
-                android:text="@string/_0"
-                android:textColor="@color/text"
-                android:textSize="56sp" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/button_marginBottom"
-                android:layout_marginLeft="@dimen/button_marginLeft"
-                android:layout_marginRight="@dimen/button_marginRight"
-                android:onClick="addThreeForHome"
-                android:text="@string/_3_points" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/button_marginBottom"
-                android:layout_marginLeft="@dimen/button_marginLeft"
-                android:layout_marginRight="@dimen/button_marginRight"
-                android:onClick="addTwoForHome"
-                android:text="@string/_2_points" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/button_marginLeft"
-                android:layout_marginRight="@dimen/button_marginRight"
-                android:onClick="addOneForHome"
-                android:text="@string/free_throw" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
+            android:id="@+id/team_textviews"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal" >
 
-            <TextView
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/team_background"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:padding="16dp"
-                android:text="@string/visitor"
-                android:textColor="@color/text"
-                android:textSize="16sp" />
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/visitor_score"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@color/score_background"
-                android:fontFamily="sans-serif-light"
-                android:padding="20dp"
-                android:text="@string/_0"
-                android:textColor="@color/text"
-                android:textSize="56sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/team_background"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="@string/home"
+                    android:textColor="@color/team_text"
+                    android:textSize="18sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/button_marginBottom"
-                android:layout_marginLeft="@dimen/button_marginLeft"
-                android:layout_marginRight="@dimen/button_marginRight"
-                android:onClick="addThreeForVisitor"
-                android:text="@string/_3_points" />
+                <TextView
+                    android:id="@+id/home_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="@dimen/score_marginTop"
+                    android:background="@color/score_background"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="20dp"
+                    android:text="@string/_0"
+                    android:textColor="@color/score_text"
+                    android:textSize="32sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/button_marginBottom"
-                android:layout_marginLeft="@dimen/button_marginLeft"
-                android:layout_marginRight="@dimen/button_marginRight"
-                android:onClick="addTwoForVisitor"
-                android:text="@string/_2_points" />
+                <Button
+                    android:background="@color/button_background"
+                    android:textColor="@color/button_text"
+                    android:padding="@dimen/button_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/button_marginTop"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addThreeForHome"
+                    android:text="@string/_3_points"
+                    android:textSize="16sp"/>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/button_marginLeft"
-                android:layout_marginRight="@dimen/button_marginRight"
-                android:onClick="addOneForVisitor"
-                android:text="@string/free_throw" />
+                <Button
+                    android:background="@color/button_background"
+                    android:textColor="@color/button_text"
+                    android:padding="@dimen/button_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addTwoForHome"
+                    android:text="@string/_2_points"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:background="@color/button_background"
+                    android:textColor="@color/button_text"
+                    android:padding="@dimen/button_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addOneForHome"
+                    android:text="@string/free_throw"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/team_background"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="@string/visitor"
+                    android:textColor="@color/team_text"
+                    android:textSize="18sp"  />
+
+                <TextView
+                    android:id="@+id/visitor_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="@dimen/score_marginTop"
+                    android:background="@color/score_background"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="20dp"
+                    android:text="@string/_0"
+                    android:textColor="@color/score_text"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:background="@color/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/button_padding"
+                    android:layout_marginTop="@dimen/button_marginTop"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addThreeForVisitor"
+                    android:text="@string/_3_points"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:background="@color/button_background"
+                    android:textColor="@color/button_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/button_padding"
+                    android:layout_marginBottom="@dimen/button_marginBottom"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addTwoForVisitor"
+                    android:text="@string/_2_points"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:background="@color/button_background"
+                    android:textColor="@color/button_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/button_padding"
+                    android:layout_marginLeft="@dimen/button_marginLeft"
+                    android:layout_marginRight="@dimen/button_marginRight"
+                    android:onClick="addOneForVisitor"
+                    android:text="@string/free_throw"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/team_textviews"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/reset_marginBottom"
+            android:layout_marginLeft="@dimen/reset_marginLeft"
+            android:layout_marginRight="@dimen/reset_marginRight"
+            android:onClick="resetScore"
+            android:padding="16dp"
+            android:text="@string/reset" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/reset_marginBottom"
-        android:layout_marginLeft="@dimen/reset_marginLeft"
-        android:layout_marginRight="@dimen/reset_marginRight"
-        android:onClick="resetScore"
-        android:padding="16dp"
-        android:text="@string/reset" />
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>
