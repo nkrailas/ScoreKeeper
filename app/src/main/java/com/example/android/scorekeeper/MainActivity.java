@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import com.example.android.scorekeeper.R;
 
+//Background image: https://unsplash.com/photos/HVOwuodWbu0
+
 public class MainActivity extends AppCompatActivity {
     // Tracks score for Home.
     int scoreHome = 0;

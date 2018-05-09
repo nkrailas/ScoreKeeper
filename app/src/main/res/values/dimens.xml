@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="team_padding">16dp</dimen>
     <dimen name="score_marginTop">24dp</dimen>
-    <dimen name="button_marginLeft">40dp</dimen>
-    <dimen name="button_marginRight">40dp</dimen>
+    <dimen name="score_marginBottom">16dp</dimen>
+    <dimen name="score_padding">20dp</dimen>
+    <dimen name="button_marginStart">40dp</dimen>
+    <dimen name="button_marginEnd">40dp</dimen>
     <dimen name="button_marginTop">16dp</dimen>
     <dimen name="button_marginBottom">24dp</dimen>
     <dimen name="button_padding">2dp</dimen>
-    <dimen name="reset_marginLeft">22dp</dimen>
-    <dimen name="reset_marginRight">22dp</dimen>
+    <dimen name="reset_marginStart">22dp</dimen>
+    <dimen name="reset_marginEnd">22dp</dimen>
     <dimen name="reset_marginBottom">36dp</dimen>
+    <dimen name="reset_padding">16dp</dimen>
+    <dimen name="team_padding_land">4dp</dimen>
     <dimen name="score_marginTop_land">8dp</dimen>
-    <dimen name="button_marginLeft_land">40dp</dimen>
-    <dimen name="button_marginRight_land">40dp</dimen>
+    <dimen name="score_marginBottom_land">8dp</dimen>
+    <dimen name="score_padding_land">4dp</dimen>
     <dimen name="button_marginTop_land">4dp</dimen>
     <dimen name="button_marginBottom_land">4dp</dimen>
     <dimen name="button_padding_land">2dp</dimen>
-    <dimen name="reset_marginLeft_land">16dp</dimen>
-    <dimen name="reset_marginRight_land">16dp</dimen>
+    <dimen name="reset_marginStart_land">16dp</dimen>
+    <dimen name="reset_marginEnd_land">16dp</dimen>
     <dimen name="reset_marginBottom_land">36dp</dimen>
+    <dimen name="reset_padding_land">16dp</dimen>
 </resources>

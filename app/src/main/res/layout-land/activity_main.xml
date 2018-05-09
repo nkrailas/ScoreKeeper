@@ -14,6 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:baselineAligned="false"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -28,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="4dp"
+                    android:padding="@dimen/team_padding_land"
                     android:text="@string/home"
                     android:textColor="@color/team_text"
                     android:textSize="14sp" />
@@ -38,11 +39,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="@dimen/score_marginBottom_land"
                     android:layout_marginTop="@dimen/score_marginTop_land"
                     android:background="@color/score_background"
                     android:fontFamily="sans-serif-light"
-                    android:padding="4dp"
+                    android:padding="@dimen/score_padding_land"
                     android:text="@string/_0"
                     android:textColor="@color/score_text"
                     android:textSize="28sp" />
@@ -98,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="4dp"
+                    android:padding="@dimen/team_padding_land"
                     android:text="@string/visitor"
                     android:textColor="@color/team_text"
                     android:textSize="14sp" />
@@ -111,7 +112,7 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginTop="@dimen/score_marginTop_land"
                     android:fontFamily="sans-serif-light"
-                    android:padding="4dp"
+                    android:padding="@dimen/score_padding_land"
                     android:text="@string/_0"
                     android:textColor="@color/score_text"
                     android:background="@color/score_background"
@@ -164,12 +165,10 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/reset_marginBottom_land"
-            android:layout_marginStart="@dimen/reset_marginLeft_land"
-            android:layout_marginLeft="@dimen/reset_marginLeft_land"
-            android:layout_marginEnd="@dimen/reset_marginRight_land"
-            android:layout_marginRight="@dimen/reset_marginRight_land"
+            android:layout_marginEnd="@dimen/reset_marginEnd_land"
+            android:layout_marginStart="@dimen/reset_marginStart_land"
             android:onClick="resetScore"
-            android:padding="16dp"
+            android:padding="@dimen/reset_padding_land"
             android:text="@string/reset" />
 
     </RelativeLayout>
