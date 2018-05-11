@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("visitor_score", scoreVisitor);
     }
 
+
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
