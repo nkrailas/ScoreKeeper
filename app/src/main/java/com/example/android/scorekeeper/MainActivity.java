@@ -2,6 +2,7 @@ package com.example.android.scorekeeper;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -22,6 +23,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         displayForHome(0);
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("home_score", scoreHome);
+        outState.putInt("visitor_score", scoreVisitor);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        scoreHome = savedInstanceState.getInt("home_score");
+        scoreVisitor = savedInstanceState.getInt("visitor_score");
+    }
+
 
     /**
      * Displays the given score for Home.
