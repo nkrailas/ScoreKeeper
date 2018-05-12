@@ -9,6 +9,9 @@ import android.widget.TextView;
 import com.example.android.scorekeeper.R;
 
 //Background image: https://unsplash.com/photos/HVOwuodWbu0
+//Learning resources for onSaveInstanceState() and onRestoreInstanceState():
+// 5/11/2018 (per online mentor) ~ http://code.hootsuite.com/orientation-changes-on-android/
+// 5/11/2018 ~ https://medium.com/@doyouseeitmyway/save-and-restore-instance-state-made-easy-cf6f175f54b0
 
 public class MainActivity extends AppCompatActivity {
     // Tracks score for Home.
@@ -38,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         scoreHome = savedInstanceState.getInt("home_score");
         scoreVisitor = savedInstanceState.getInt("visitor_score");
     }
-
 
     /**
      * Displays the given score for Home.
